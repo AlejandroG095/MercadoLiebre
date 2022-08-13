@@ -1,0 +1,46 @@
+header {
+    background-color: #EAC926;
+    font-family: 'Roboto', sans-serif;
+}
+p {
+    font-size: 12px;
+}
+p.anuncio {
+    text-align: center;
+    font-size: 16px;
+
+}
+h2 {
+    font-size: 24px;
+}
+button.menu{
+    color: white;
+    background-color: #0044aa;
+    border-radius: 4px;
+    border-width: 0;
+    width: 30px;
+    height: 30px;
+}
+button.menu:hover{
+    background-color: rgb(69, 93, 199);
+}
+.precio {
+    font-size: 18px;
+}
+.elemento {
+    font-size: 16px;
+}
+.descripcion {
+    font-size: 16px;
+}
+footer {
+    text-align: center;
+    font-family: sans-serif;
+}
+footer .fa-solid, .fas {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #0044aa;
+}
