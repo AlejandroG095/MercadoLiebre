@@ -9,68 +9,50 @@ header {
     background-color: #EAC926;
     font-family: 'Roboto', sans-serif;
 }
+.main-header-top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
 .logo {
-    padding: 10px;
-    width: 50%;
+    padding: 1.5%;
+    width: 48%;
 }
 /*atributos de la barra de busqueda */
 header .form {
-    display: flex;
-    width: inherit;
-    max-width: 1200px;
-    margin: auto;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    width: 48%;
 }
-header .form .input{
-    background-color: #FFF;
-    border: 1px solid #666;
-    outline: none;
-    color: #666;
-    padding: 2px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 30px;
-    width: 80%;
-    font-size: 4vw;
-
-}
-header .form .submit{
-    background-color: #FFF;
-    border: 1px solid #666;
-    color: #666;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 30px;
-    width: 20%;
+.form input[type=text]{
+    width: 45%;
+    margin-left: 3%;
 }
 /*----------------------------------*/
-.encabezado {
-    display: flex;
-    align-items: center;
-    padding: 5px;
-}
 p {
     font-size: 12px;
 }
-p.anuncio {
+.anuncio {
     text-align: center;
-    font-size: large;
-    margin: 4px;
+    padding: 1.5%;
 }
 h2 {
     font-size: 24px;
+}
+.menu {
+    padding: 5px;
 }
 .burger-menu {
     background-color: #03264C;
     color: white;
     display: block;
-    max-width: 50px;
-    padding: 15px 0;
+    max-width: 40px;
+    padding: 10px 0;
     border-radius: 8px;
     text-align: center;
-    font-size: 18px;
-    margin: auto; 
+    font-size: 15px;
+    margin: auto;
     margin-bottom: 5px;
 }
 .main-navbar {
@@ -90,10 +72,13 @@ h2 {
 }
 .banner {
     width: 100vw;
-    margin-top: 10px;
 }
 
 /* MAIN */
+main {
+    width: 95%;
+    margin: auto;
+}
 body {
     background-color: #ebebeb;
 }
@@ -108,6 +93,10 @@ body {
 }
 .producto img {
     width: 100%;
+}
+.precio-descuento {
+    display: flex;
+    align-items: center;
 }
 /* para poder ubicar el icono como nos piden, debemos usar
 position: relative en el contenedor padre, para poder usar 
@@ -131,27 +120,14 @@ position: absolute en el hijo (el icono en si) */
     right: 20px;
     top: -15px;
 }
-/*
-.caracteristicas .fa-solid, .fas{
-    font-family: "Font Awesome 6 Free";
-    font-weight: 900;
-    color: #0ccc36;
-    padding-top: 10px;
-    text-align: center;
-}
-.circulo{
-    border: solid 1px #0ccc36;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-}
-*/
 .precio {
     font-size: 18px;
+    flex-grow: 0.3;
 }
 .descuento {
     font-size: 16px;
     color: #0ccc36;
+    flex-grow: 0.7;
 }
 .descripcion {
     font-size: 16px;
@@ -164,7 +140,9 @@ position: absolute en el hijo (el icono en si) */
 footer {
     text-align: center;
     font-family: sans-serif;
-    margin-top: 10px;
+    margin-top: 5%;
+    background-color: white;
+    padding: 10px 10px 0px 10px;
 }
 footer .fa-solid, .fas {
     font-family: "Font Awesome 6 Free";
@@ -172,6 +150,14 @@ footer .fa-solid, .fas {
     font-size: 2em;
     margin-bottom: 10px;
     color: #0044aa;
+}
+footer section {
+    margin-bottom: 5%;
+}
+.copyright {
+    text-align: left;
+    padding: 3%;
+    color: #666;
 }
 
 /* navegacion en tablets: */
@@ -181,14 +167,19 @@ footer .fa-solid, .fas {
         justify-content: space-between;
         align-items: center;
     }
-    .main-navbar {
-        font-size: small;
+    .logo {
+        width: 32%;
     }
-    .encabezado {
-        width: 100%;
+    header .form {
+        width: 32%;
+        text-align: center;
     }
-    header .form .input {
-        font-size: 2vw;
+    .anuncio {
+        width: 32%;
+        text-align: center;
+    }
+    .form input[type=text] {
+        width: 75%;
     }
     .descripcion {
         display: block;
@@ -200,7 +191,6 @@ footer .fa-solid, .fas {
     }
     .main-navbar {
         display: flex;
-        flex-direction: row;
         justify-content: space-between;
     }
     .main-navbar ul {
@@ -218,12 +208,7 @@ footer .fa-solid, .fas {
     }
 
 }
-@media (min-width: 456px) {
-    .main-navbar a{
-        font-size: 17px;
-    }
 
-}
 /* navegacion en escritorio: */
 @media (min-width: 769px){
     .logo {
@@ -233,14 +218,10 @@ footer .fa-solid, .fas {
         margin: 0 10px;
     }
     .main-navbar a {
-        font-size: 19px;
+        font-size: 16px;
     }
     header .form .input {
         font-size: 16px;
-    }
-    .contenedor-productos {
-        flex-flow: row wrap;
-        justify-content: flex-start;
     }
     .producto {
         max-width: 24%;
