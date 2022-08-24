@@ -14,17 +14,16 @@
 <body>
     <header>
         <div class="main-header-top-bar">
-            <img src="/images/logo-mercado-liebre.svg" class="logo">
-            <!--Declaracion de la barra de busqueda y el botón de busaueda (mia)
-                <input type="text" value="Buscar productos, marcas">
-                <button type="submit" value="">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </button> -->
+            <a href="/" class="link-logo">
+                <img src="/images/logo-mercado-liebre.svg" class="logo" >
+            </a>
             <div class="form">
-                <input type="text" placeholder="Buscar productos, marcas y más">
-                <button type="submit" value="">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </button>
+                <form action="#" method="get">
+                    <input type="text" name="search-bar" id="search-bar" class="campo-busqueda" placeholder="Buscar productos, marcas y más" required>
+                    <button type="submit" value="" class="boton-sb">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>                
             </div>
             <div class="anuncio">
                 <i class="fa-solid fa-hand-holding-dollar"></i>
@@ -45,10 +44,10 @@
                 <li><a href='#'>Ayuda</a></li>
             </ul>
             <ul type="none" class="right-navbar">
-                <li><a href='#'>Creá tu cuenta </a>
+                <li><a href='/register'>Creá tu cuenta </a>
                     <i class="fa-solid fa-id-card"></i>
                 </li>
-                <li><a href='#'>Ingresá </a>
+                <li><a href='/login'>Ingresá </a>
                     <i class="fa-solid fa-right-to-bracket"></i>
                 </li>
                 <li><a href='#'>Mis compras </a>
