@@ -21,25 +21,39 @@ header {
     width: 48%;
 }
 /*atributos de la barra de busqueda */
-header .form {
+header .busqueda {
     margin-top: 3%;
     margin-bottom: 3%;
-    width: 48%;
+    width: 50%;
 }
 .campo-busqueda {
     border: none;
 }
-.form input[type=text]{
-    width: 45%;
+form.example input[type=text] {
+    padding: 6px;
+    font-size: 12px;
+    border: none;
+    float: left;
+    width: 80%;
+    background: white;
+    border-radius: 8px 0 0 8px;
 }
-.boton-sb {
-    border: 1px solid white;
-    border-radius: 8PX;
-    background-color: white;
-    height: 30px;
+form.example button {
+    float: left;
+    width: 18%;
+    padding: 6px;
+    background: white;
+    color: black;
+    font-size: 12px;
+    border: none;
+    border-left: none;
+    cursor: pointer;
+    border-radius: 0 8px 8px 0;
+    transition: all 300ms;
 }
-.lupa {
-    padding: 5px;
+form.example button:hover {
+    background: #0b7dda;
+    color: white;
 }
 /*----------------------------------*/
 p {
@@ -297,16 +311,13 @@ input[type="date" i] {
     .link-logo {
         width: 32%;
     }
-    header .form {
+    header .busqueda {
         width: 32%;
         text-align: center;
     }
     .anuncio {
         width: 32%;
         text-align: center;
-    }
-    .form input[type=text] {
-        width: 75%;
     }
     .descripcion {
         display: block;
@@ -355,8 +366,12 @@ input[type="date" i] {
     .main-navbar a {
         font-size: 16px;
     }
-    header .form .input {
-        font-size: 16px;
+    form.example input[type=text] {
+        font-size: 14px;
+    }
+    form.example button {
+        font-size: 14px;
+        
     }
     .producto {
         max-width: 24%;
